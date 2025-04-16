@@ -16,9 +16,17 @@ Welcome! This is my personal cybersecurity lab and learning portfolio. I'm trans
 
 ## 🧪 Lab Write-Ups
 
+### 🔧 TryHackMe Labs
+
 | Lab Name | Description | Link |
 |----------|-------------|------|
 | **Linux Fundamentals 1** | Basic Linux commands, file structure, and permissions | [View Write-Up](linux-fundamentals-1.md) |
+
+### 🎓 Dion Training Labs
+
+| Lab Set | Description | Link |
+|---------|-------------|------|
+| **Security+ Lab Simulations** | Labs covering risk management, attacks, security tools, and controls aligned with the CompTIA Security+ exam objectives | [Coming Soon] |
 
 > More labs coming soon!
 
