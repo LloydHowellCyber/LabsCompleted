@@ -4,13 +4,10 @@ Welcome! This is my personal cybersecurity lab and learning portfolio. I'm trans
 
 ---
 
-## 🔧 Tools & Topics Covered
-- 🔐 Security Fundamentals (CompTIA Security+ Certified)
-- 🖥️ Linux Command Line
-- 🌐 Networking & Protocols
-- 🧠 Threats & Vulnerabilities
-- 📄 File Permissions & User Management
-- 🧰 Nmap, Wireshark, Netcat, and more
+## 📜 Certification Progress
+✅ CompTIA Security+ Certified (April 2025)  
+🎓 Labs completed on DionTraining.com and TryHackMe.com
+
 
 ---
 
