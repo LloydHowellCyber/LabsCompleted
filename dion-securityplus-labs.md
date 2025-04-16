@@ -82,4 +82,36 @@ This lab is part of my CompTIA Security+ certification journey, using Dion Train
 - TLS/SSL plays a critical role in securing web traffic.
 - PKI is the backbone of trusted communications and identity verification online.
 
+# 🛡️ Threat Vectors and Attack Surfaces Lab – CompTIA Security+  
+> Hands-on lab from Dion Training’s Security+ course  
+> Focus: Identifying Threat Vectors and Understanding Attack Surfaces
+
+## 🧠 Overview
+This lab is part of my journey to obtain the **CompTIA Security+** certification, using Dion Training's virtual lab environment. The **Threat Vectors and Attack Surfaces Lab** focuses on recognizing potential vulnerabilities, understanding attack surfaces, and identifying vectors that attackers use to exploit systems.
+
+## 🛠️ What I Worked On
+- **Threat Vectors**
+  - Identified and explored different types of threat vectors, including phishing, malware, and social engineering.
+  - Simulated attacks through various threat vectors and analyzed their impact on systems and networks.
+- **Attack Surfaces**
+  - Examined what constitutes an attack surface, focusing on hardware, software, networks, and users.
+  - Analyzed how different systems expose vulnerabilities through their interfaces and services.
+- **Security Posture**
+  - Assessed organizational security posture and discussed strategies to reduce attack surfaces.
+  - Identified weak points in systems where attackers could exploit vulnerabilities.
+
+## 🧰 Tools Used
+- Virtual Lab Environment from DionTraining.com  
+- Simulated attacks (e.g., phishing, malware, SQL injection)  
+- Network analysis tools (e.g., Wireshark)  
+- Vulnerability scanning tools (e.g., Nessus, OpenVAS)
+
+## 🎯 Key Takeaways
+- **Threat vectors** refer to the paths attackers use to infiltrate systems (e.g., email, network vulnerabilities, physical access).
+- **Attack surfaces** encompass all possible entry points for malicious actors (e.g., open ports, software vulnerabilities, human factors).
+- Regularly updating software and implementing multi-layered security (defense in depth) can help mitigate attack surfaces.
+- Social engineering is one of the most common threat vectors in real-world cyberattacks.
+- Understanding the components of your attack surface helps improve overall security posture by closing unused ports, applying patches, and educating users.
+
+
 
