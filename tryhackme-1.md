@@ -229,6 +229,28 @@ This is the second room in TryHackMe's Linux Fundamentals series. It builds on f
 - Permission groups: Owner, Group, Others
 - `chmod 755 file` to assign permissions numerically
 
+# TryHackMe - Linux Fundamentals Level 3
+
+![TryHackMe Badge](https://tryhackme-badges.s3.amazonaws.com/LloydHowellCyber.png)
+
+> 📘 **Room URL:** [Linux Fundamentals Part 3](https://tryhackme.com/room/linuxfundamentals3)  
+> 🧠 **Focus Areas:** Bash scripting, user management, cron jobs, system services, and process control.
+
+---
+
+## 🗂️ Room Overview
+
+**Linux Fundamentals Level 3** is the final room in the foundational Linux learning series on TryHackMe. This level focuses on deeper administrative tasks such as:
+
+- Bash script execution
+- Managing users and permissions
+- Setting up cron jobs
+- Controlling processes and services
+- System monitoring commands
+
+---
+
+
 
 
 
