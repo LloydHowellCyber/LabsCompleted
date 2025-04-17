@@ -177,7 +177,59 @@ In this TryHackMe room, I worked on understanding and exploiting **common cybers
 - **Privilege escalation** highlights the importance of least privilege and secure configuration management.
 - **DoS/DDoS attacks** can cause significant disruption and can be mitigated with proper network security controls and redundancy.
 
-## 📁 Repo Contents (if applicable)
+# TryHackMe - Linux Fundamentals Level 2
+
+![TryHackMe Badge](https://tryhackme-badges.s3.amazonaws.com/LloydHowellCyber.png)
+
+> 📘 **Room URL:** [Linux Fundamentals Level 2](https://tryhackme.com/room/linuxfundamentals2)  
+> 🧠 **Focus Areas:** File and Directory Permissions, File Management, Wildcards, `find` command, `grep`, and Bash scripting fundamentals.
+
+---
+
+## 🗂️ Room Overview
+
+This is the second room in TryHackMe's Linux Fundamentals series. It builds on foundational knowledge by diving deeper into:
+
+- File permissions and management
+- Directory structure navigation
+- Wildcard usage
+- The power of `find` and `grep`
+- Intro to Bash scripting
+
+---
+
+## 🧰 Key Concepts & Commands
+
+| Topic                | Description |
+|----------------------|-------------|
+| `chmod`, `chown`     | Modify permissions and ownership |
+| `find`               | Locate files and directories based on patterns |
+| `grep`               | Search through file content |
+| `*`, `?`             | Wildcards for pattern matching |
+| Bash Scripting       | Basic structure and logic of `.sh` files |
+
+---
+
+## ✅ Task Breakdown
+
+### **Task 1: Introduction**
+- Overview of what's to come.
+- You’ll need the Level 1 room knowledge.
+
+---
+
+### **Task 2: Linux Directory Structure**
+- Learn paths like `/bin`, `/etc`, `/var`, `/home`
+- Understand absolute vs relative paths.
+
+---
+
+### **Task 3: File and Directory Permissions**
+- `ls -l` to view permissions
+- Permission groups: Owner, Group, Others
+- `chmod 755 file` to assign permissions numerically
+
+
 
 
 
