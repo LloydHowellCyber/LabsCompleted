@@ -1,3 +1,86 @@
+# TryHackMe - Search Skills
+
+![TryHackMe](https://tryhackme-badges.s3.amazonaws.com/LloydHowellCyber.png)
+> A walkthrough and note set for the **Search Skills** room on TryHackMe.  
+> Focus: Open-Source Intelligence (OSINT), Google Dorking, Search Operators, and File Discovery.
+
+---
+
+## 🧠 Room Overview
+This room introduces techniques for finding sensitive or useful information using online search engines, especially Google. It focuses on:
+
+- Boolean operators
+- Google dorking
+- Filetype searches
+- Site-based narrowing
+- Hunting for credentials or misconfigured services
+
+---
+
+## 🛠 Tools & Techniques Covered
+
+| Tool / Technique   | Description                                      |
+|--------------------|--------------------------------------------------|
+| `site:`            | Limits results to a specific domain              |
+| `filetype:`        | Finds files of a specific type (e.g., `.pdf`)    |
+| `intitle:`         | Searches for terms in the title of a page        |
+| `inurl:`           | Searches for terms in the URL                    |
+| `cache:`           | Displays the cached version of a page            |
+| `"exact match"`    | Searches for an exact phrase                     |
+| `-term`            | Excludes a keyword from search results           |
+
+---
+
+## ✅ Task Summaries
+
+### Task 1: Introduction
+- Quick overview of the room's objectives.
+
+### Task 2: Search Operators
+- **Q:** How do you search for an exact phrase?  
+  **A:** `"phrase in quotes"`
+
+- **Q:** How do you exclude terms?  
+  **A:** Use the `-` operator. Example: `python -snake`
+
+### Task 3: Google Dorking
+- **Common dorks:**
+  - `filetype:pdf site:gov`
+  - `intitle:"index of" "passwords"`
+  - `site:pastebin.com intext:"password"`
+
+- **Q:** What file type would most likely contain logs?  
+  **A:** `.log`
+
+### Task 4: Finding Files
+- Use `filetype:` with keywords like "conf", "backup", "credentials"
+- Try `intitle:index.of` to explore open directories.
+
+- **Q:** What operator helps search for open directories?  
+  **A:** `intitle:"index of"`
+
+### Task 5: Final Challenge
+- Apply everything from previous tasks to find a specific file or string on a test site provided.
+
+---
+
+## 📝 Notes
+
+- Be cautious not to unintentionally access or interact with real-world sensitive systems.
+- These techniques are powerful but should be used ethically and legally.
+- Practice makes perfect. Try applying these to CTFs, bug bounty hunting, or your own domain recon.
+
+---
+
+## 📚 Resources
+
+- [Google Dorking Cheat Sheet – Exploit-DB](https://www.exploit-db.com/google-hacking-database)
+- [TryHackMe - Search Skills Room](https://tryhackme.com/room/searchskills)
+- [Advanced Google Search](https://www.google.com/advanced_search)
+
+---
+
+
 # TryHackMe: Linux Fundamentals 1
 
 **Platform:** TryHackMe  
