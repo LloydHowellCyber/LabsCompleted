@@ -282,6 +282,38 @@ cd
 tree
 
 
+# 🪟 TryHackMe: Windows Fundamentals III
+
+## 📌 Room Link
+[Windows Fundamentals III on TryHackMe](https://tryhackme.com/room/windowsfundamentals3)
+
+## 🧠 Overview
+This final part of the Windows Fundamentals series covers the Windows Registry, Task Manager, system processes, and services. You'll explore how to manage system performance and understand how Windows handles internal operations.
+
+---
+
+## 🧭 Task Guide
+
+### ✅ Task 1 - Introduction
+- Focus areas:
+  - Windows Registry
+  - Task Manager and system processes
+  - Services and startup items
+
+---
+
+### 🧬 Task 2 - The Windows Registry
+- Hierarchical database storing low-level OS and app settings.
+- Root keys (also called "hives"):
+  - `HKEY_LOCAL_MACHINE (HKLM)`
+  - `HKEY_CURRENT_USER (HKCU)`
+  - `HKEY_CLASSES_ROOT (HKCR)`
+  - `HKEY_USERS (HKU)`
+  - `HKEY_CURRENT_CONFIG (HKCC)`
+
+#### 🔧 Common Tool
+```powershell
+regedit
 
 
 
