@@ -277,9 +277,8 @@ This room builds upon concepts from Windows Fundamentals I. It covers key compon
 
 #### 🔍 Commands Used
 ```powershell
-dir
-cd
-tree   
+
+
 
 
 # 🪟 TryHackMe: Windows Fundamentals III
@@ -406,6 +405,5 @@ This room introduces the fundamentals of **Active Directory (AD)** — a central
 
 - [Microsoft Docs - Active Directory](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/get-started/virtual-dc/active-directory-domain-services-overview)
 - [AD Security Cheat Sheet](https://www.hackingarticles.in/windows-active-directory-pentest-cheatsheet/)
-
 
 
