@@ -279,7 +279,7 @@ This room builds upon concepts from Windows Fundamentals I. It covers key compon
 ```powershell
 dir
 cd
-tree
+tree   
 
 
 # 🪟 TryHackMe: Windows Fundamentals III
