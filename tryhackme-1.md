@@ -281,7 +281,6 @@ dir
 cd
 tree
 
-
 # 🪟 TryHackMe: Windows Fundamentals III
 
 ## 📌 Room Link
@@ -314,6 +313,7 @@ This final part of the Windows Fundamentals series covers the Windows Registry, 
 #### 🔧 Common Tool
 ```powershell
 regedit
+
 
 
 
