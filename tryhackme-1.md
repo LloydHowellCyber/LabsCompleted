@@ -250,6 +250,36 @@ This is the second room in TryHackMe's Linux Fundamentals series. It builds on f
 
 ---
 
+# 🪟 TryHackMe: Windows Fundamentals II
+
+## 📌 Room Link
+[Windows Fundamentals II on TryHackMe](https://tryhackme.com/room/windowsfundamentals2)  
+
+## 🧠 Overview
+This room builds upon concepts from Windows Fundamentals I. It covers key components such as the Windows file system, permissions, logs, and how Windows manages system resources.
+
+---
+
+## 🧭 Task Guide
+
+### ✅ Task 1 - Introduction
+- Brief overview of what's covered
+- Concepts to focus on: **NTFS**, **file permissions**, **event logs**
+
+---
+
+### 🗂️ Task 2 - File System Basics
+- Windows uses **NTFS** as the default file system.
+- Key directories:
+  - `C:\Windows` – system files
+  - `C:\Program Files` – installed applications
+  - `C:\Users` – user profiles
+
+#### 🔍 Commands Used
+```powershell
+dir
+cd
+tree
 
 
 
