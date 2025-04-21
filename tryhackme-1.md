@@ -315,6 +315,97 @@ This final part of the Windows Fundamentals series covers the Windows Registry, 
 ```powershell
 regedit
 
+# 🖥️ TryHackMe: Active Directory Basics
+
+> **Room Link:** [TryHackMe - Active Directory Basics](https://tryhackme.com/room/active-directory-basics)
+
+## 🧠 Summary
+
+This room introduces the fundamentals of **Active Directory (AD)** — a centralized directory service used by Windows domain networks to manage users, devices, and permissions. The room walks through key AD concepts and tools in a beginner-friendly, hands-on format.
+
+---
+
+## 📚 Topics Covered
+
+- What is Active Directory?
+- Domain Controllers and Domains
+- Forests and Trusts
+- Users, Groups, and Organizational Units (OUs)
+- Group Policy Objects (GPOs)
+- Authentication: Kerberos and NTLM
+- Tools like `Active Directory Users and Computers (ADUC)`, `Group Policy Management Console (GPMC)`, and `PowerShell`
+
+---
+
+## 🧰 Tools Used
+
+- **Windows Virtual Machine** (provided in the lab)
+- **PowerShell**
+- **RSAT (Remote Server Administration Tools)**
+
+---
+
+## 📝 Key Notes
+
+### 🏢 Active Directory Basics
+
+- **Domain Controller (DC):** A server that manages AD.
+- **Objects:** Users, computers, printers, etc.
+- **Organizational Units (OUs):** Containers for organizing AD objects.
+
+### 👥 Users and Groups
+
+- **User Accounts:** Represent individuals in the domain.
+- **Groups:** Used for role-based access control (RBAC).
+  - **Security groups:** Assign permissions.
+  - **Distribution groups:** Used with email only.
+
+### 🔐 Authentication
+
+- **Kerberos** is the default protocol for authentication.
+- **NTLM** is used as a fallback (less secure).
+
+### 🛠️ Admin Tools
+
+- **ADUC (Active Directory Users and Computers):** GUI for managing users/OUs.
+- **GPMC (Group Policy Management Console):** Used to configure and link GPOs.
+- **PowerShell:** Great for scripting and automation in AD.
+
+---
+
+## 🧪 Lab Tasks & Answers
+
+> ⚠️ _Note: Do not share actual task answers unless permitted by TryHackMe. Below is a general task outline._
+
+### Task 1: Introduction  
+✅ Learned what AD is and how it's structured.
+
+### Task 2: Domain Controllers  
+🔍 Located the domain controller using `nslookup`.
+
+### Task 3: Users and Computers  
+👤 Created a user and added it to a group using `ADUC`.
+
+### Task 4: Group Policy  
+🛡️ Explored GPOs and saw how policies can enforce password complexity rules.
+
+### Task 5: Authentication Protocols  
+🔐 Understood how Kerberos works with ticket-granting tickets (TGTs) and service tickets (TGS).
+
+---
+
+## 🧠 Things to Remember
+
+- **Active Directory is essential** for managing resources and security in enterprise environments.
+- **PowerShell** is a powerful tool for querying and manipulating AD.
+- **Kerberos is preferred** over NTLM due to better security features.
+
+---
+
+## 🔗 Resources
+
+- [Microsoft Docs - Active Directory](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/get-started/virtual-dc/active-directory-domain-services-overview)
+- [AD Security Cheat Sheet](https://www.hackingarticles.in/windows-active-directory-pentest-cheatsheet/)
 
 
 
