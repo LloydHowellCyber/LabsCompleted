@@ -664,4 +664,117 @@ pwsh
 - Scripting in PowerShell can streamline tasks across platforms.
 - Helpful for cross-platform sysadmin and automation work.
 
+# 🧠 TryHackMe: Networking Concepts Lab
+
+> Room Link: [https://tryhackme.com/room/networking](https://tryhackme.com/room/networking)  
+> Difficulty: 🟢 Easy  
+> Tags: Networking, TCP/IP, OSI Model, Subnetting
+
+---
+
+## 🧾 Task 1: Introduction to Networking
+- **Summary:** Brief overview of what networking is and why it's important.
+- **Key Concepts:** Nodes, routers, switches, communication protocols
+
+---
+
+## 🌐 Task 2: The OSI Model
+- **OSI Layers:**
+  1. Application
+  2. Presentation
+  3. Session
+  4. Transport
+  5. Network
+  6. Data Link
+  7. Physical
+
+- **Mnemonics:**
+  - *All People Seem To Need Data Processing*
+  - *Please Do Not Touch Steve’s Penis Again* 😅
+
+- **Question Answers:**
+  - _Which layer does HTTP belong to?_ → Application Layer
+  - _Which layer deals with IP addresses?_ → Network Layer
+
+---
+
+## 📡 Task 3: IP Addresses and Subnetting
+- **IP Versions:** IPv4 and IPv6
+- **Subnetting Concepts:** CIDR, netmask, network vs host portion
+- **Helpful Tools:** `ipcalc`, subnet cheat sheets
+
+- **Answers:**
+  - _What is the default subnet mask for a Class C IP?_ → 255.255.255.0
+  - _How many hosts can you have on a /29 subnet?_ → 6
+
+---
+
+## 📦 Task 4: TCP/IP Model
+- **4 Layers:**
+  1. Application
+  2. Transport
+  3. Internet
+  4. Network Access
+
+- **Comparison with OSI:** TCP/IP merges some OSI layers
+
+- **Answers:**
+  - _Which layer is responsible for reliable transmission?_ → Transport
+  - _Which layer maps to OSI's Network Layer?_ → Internet
+
+---
+
+## 🚪 Task 5: Ports and Protocols
+- **Common Ports:**
+  - 80 – HTTP  
+  - 443 – HTTPS  
+  - 22 – SSH  
+  - 53 – DNS  
+  - 25 – SMTP
+
+- **Protocols:**
+  - TCP vs UDP
+  - Connection-oriented vs connectionless
+
+- **Answers:**
+  - _Which port does SSH use?_ → 22
+  - _Is DNS TCP or UDP?_ → Both (UDP primarily, TCP for zone transfers)
+
+---
+
+## 🔌 Task 6: Tools & Practical Commands
+- **Commands:**
+  - `ping`
+  - `traceroute` / `tracert`
+  - `netstat`
+  - `nslookup` / `dig`
+
+- **Answers:**
+  - _What command would you use to see the route packets take?_ → `traceroute`
+
+---
+
+## 🧠 Task 7: Final Thoughts and Recap
+- **Concepts Mastered:**
+  - OSI & TCP/IP Models
+  - IP Addressing & Subnetting
+  - Common Ports & Protocols
+  - Troubleshooting Commands
+
+---
+
+## 📝 Notes
+- Try subnetting practice at [SubnettingPractice.com](https://www.subnettingpractice.com/)
+- Consider checking out Cisco’s Packet Tracer for simulating networks
+- Use `nmap -p-` to scan all ports and `-sV` to get service version info
+
+---
+
+## ✅ Room Complete!
+- [x] All questions answered
+- [x] Learned new stuff
+- [x] Wrote it down like a pro
+
+---
+
 
