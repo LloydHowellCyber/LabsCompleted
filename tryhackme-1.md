@@ -422,3 +422,145 @@ This lab introduces basic Windows Command Line operations, focusing on essential
 - [Microsoft Docs - Active Directory](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/get-started/virtual-dc/active-directory-domain-services-overview)
 - [AD Security Cheat Sheet](https://www.hackingarticles.in/windows-active-directory-pentest-cheatsheet/)
 
+# TryHackMe PowerShell Lab Notes
+
+> **Platform**: TryHackMe  
+> **Room**: PowerShell  
+> **Author**: _Your Name Here_  
+> **Date**: _YYYY-MM-DD_
+
+---
+
+## 🧠 Objectives
+
+- Understand basic PowerShell syntax
+- Learn how to interact with the file system
+- Enumerate processes and network connections
+- Execute remote commands
+- Use PowerShell for privilege escalation and persistence
+
+---
+
+## 🧰 Key PowerShell Commands
+
+### Basic Navigation
+
+```powershell
+Get-Location          # Show current directory
+Set-Location C:\      # Change directory
+Get-ChildItem         # List contents (alias: ls)
+```
+
+### File and Directory Management
+
+```powershell
+New-Item -ItemType Directory -Name "NewFolder"
+Remove-Item .\OldFile.txt
+Copy-Item .\file.txt -Destination C:\Backup\
+Move-Item .\file.txt -Destination C:\Temp\
+```
+
+### Viewing & Filtering Objects
+
+```powershell
+Get-Process | Where-Object {$_.CPU -gt 100}
+Get-Service | Select-Object Name, Status
+```
+
+### Network Information
+
+```powershell
+Get-NetTCPConnection
+Get-NetTCPConnection | Where-Object { $_.State -eq 'Listen' }
+```
+
+### Processes
+
+```powershell
+Get-Process
+Get-Process | Sort-Object CPU -Descending
+Stop-Process -Id 1234
+```
+
+---
+
+## 🧪 Task Walkthroughs
+
+### ✅ Task 1: Introduction to PowerShell
+
+- Notes:
+  - PowerShell is both a **shell** and **scripting language**
+  - Built on .NET
+- Commands Used:
+  ```powershell
+  $PSVersionTable
+  ```
+
+### ✅ Task 2: File System Exploration
+
+- Notes:
+  - Explored `C:\Users\`
+- Commands Used:
+  ```powershell
+  Get-ChildItem -Recurse | Where-Object { $_.Length -gt 100kb }
+  ```
+
+### ✅ Task 3: Process & Network Enumeration
+
+- Notes:
+  - Found malicious process with high CPU usage
+- Commands Used:
+  ```powershell
+  Get-Process | Sort-Object CPU -Descending
+  Get-NetTCPConnection | Where-Object { $_.OwningProcess -eq 1234 }
+  ```
+
+### ✅ Task 4: Remote Execution & Scripting
+
+- Notes:
+  - Used `Invoke-WebRequest` to download a script
+- Commands Used:
+  ```powershell
+  Invoke-WebRequest -Uri http://10.10.10.10/script.ps1 -OutFile script.ps1
+  .\script.ps1
+  ```
+
+---
+
+## 🔐 Security-Relevant Cmdlets
+
+| Cmdlet                  | Purpose                           |
+|-------------------------|-----------------------------------|
+| `Get-LocalUser`         | List local users                  |
+| `Get-LocalGroupMember`  | View group memberships            |
+| `Get-ScheduledTask`     | Enumerate scheduled tasks         |
+| `Get-EventLog`          | Read Windows event logs           |
+| `Invoke-Command`        | Run commands on remote machines   |
+
+---
+
+## 📝 Observations
+
+- PowerShell output is object-based — easy to filter and format.
+- You can chain cmdlets using pipes (`|`) to perform complex tasks.
+- Many tools and malware rely on PowerShell for stealth and flexibility.
+
+---
+
+## 📌 Tips
+
+- Use `-ErrorAction SilentlyContinue` to suppress errors
+- Tab completion is your friend!
+- Use `Get-Help <cmdlet> -Examples` to learn quickly
+
+---
+
+## 📚 Resources
+
+- [Microsoft PowerShell Docs](https://learn.microsoft.com/en-us/powershell/)
+- [TryHackMe PowerShell Room](https://tryhackme.com/)
+- [GTFOBins Equivalent: LOLBAS](https://lolbas-project.github.io/)
+
+
+
+
