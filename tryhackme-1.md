@@ -396,8 +396,29 @@ This room introduces the fundamentals of **Active Directory (AD)** — a central
 - **Kerberos is preferred** over NTLM due to better security features.
 
 ---
+# TryHackMe: Windows Command Line Lab
 
-## 🔗 Resources
+## Overview
+
+This lab introduces basic Windows Command Line operations, focusing on essential commands for navigating, managing processes, and interacting with the file system. The goal is to help you become comfortable using the command line to perform administrative tasks on a Windows system.
+
+## Learning Objectives
+
+- Learn basic navigation and file manipulation commands.
+- Understand how to manage running processes.
+- Use networking commands to troubleshoot and configure network settings.
+- Work with system shutdown and restart commands.
+
+## Commands Covered
+
+### 1. **Navigating the File System**
+
+- **`dir`**  
+  Lists the files and directories in the current directory.
+  
+  ```cmd
+  dir
+
 
 - [Microsoft Docs - Active Directory](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/get-started/virtual-dc/active-directory-domain-services-overview)
 - [AD Security Cheat Sheet](https://www.hackingarticles.in/windows-active-directory-pentest-cheatsheet/)
