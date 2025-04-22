@@ -777,4 +777,103 @@ pwsh
 
 ---
 
+# 🌐 TryHackMe: Networking Essentials
+
+> Room Link: [https://tryhackme.com/room/networkingessentials](https://tryhackme.com/room/networkingessentials)  
+> Difficulty: 🟢 Easy  
+> Tags: Networking, IP, OSI Model, Ports, Protocols
+
+---
+
+## 🧾 Task 1: What is a Network?
+- **Definition:** A network is a collection of devices connected together to share resources and data.
+- **Key Terms:** Nodes, Routers, Switches, LAN, WAN, Internet
+
+---
+
+## 📡 Task 2: Types of Networks
+- **LAN (Local Area Network)** – Small geographic area  
+- **WAN (Wide Area Network)** – Large geographic coverage, like the Internet  
+- **PAN, MAN, WLAN** – Other types
+
+---
+
+## 🧱 Task 3: The OSI Model
+- **7 Layers (Top to Bottom):**
+  1. Application  
+  2. Presentation  
+  3. Session  
+  4. Transport  
+  5. Network  
+  6. Data Link  
+  7. Physical
+
+- **Mnemonic Ideas:**
+  - Clean: All People Seem To Need Data Processing  
+  - Funny: Please Do Not Touch Steve's Penis Again  
+  - Political: All Presidents Shouldn’t Try Nazi Don’s Policies
+
+---
+
+## 📶 Task 4: IP Addresses
+- **IPv4 Example:** 192.168.1.1  
+- **IPv6 Example:** fe80::1ff:fe23:4567:890a  
+- **Classes A, B, C and Private Ranges**
+
+---
+
+## 🧮 Task 5: Subnetting
+- **CIDR Notation:** /24, /16, etc.  
+- **Subnet Mask Example:** 255.255.255.0  
+- **Host Calculation:** Total Hosts = 2^n - 2 (n = number of host bits)
+
+---
+
+## 🔗 Task 6: MAC Addresses
+- **Definition:** Media Access Control address, a unique identifier for NICs  
+- **Format:** 6 pairs of hexadecimal digits (e.g., 00:1A:2B:3C:4D:5E)  
+- **Does not change unless manually spoofed**
+
+---
+
+## 🌐 Task 7: DNS
+- **Purpose:** Translates domain names to IP addresses  
+- **Example:** tryhackme.com → 104.26.10.78  
+- **Tools:** `nslookup`, `dig`
+
+---
+
+## 🔒 Task 8: Ports and Protocols
+- **Common Ports:**
+  - 20/21 – FTP  
+  - 22 – SSH  
+  - 23 – Telnet  
+  - 25 – SMTP  
+  - 53 – DNS  
+  - 80 – HTTP  
+  - 443 – HTTPS
+
+- **TCP vs UDP:**
+  - TCP: Reliable, connection-based  
+  - UDP: Faster, connectionless
+
+---
+
+## 🛠 Task 9: Network Tools
+- **Useful Commands:**
+  - `ping`  
+  - `ipconfig` / `ifconfig`  
+  - `traceroute` / `tracert`  
+  - `netstat`  
+  - `nslookup`  
+  - `nmap`
+
+---
+
+## ✅ Room Complete!
+- [x] Learned networking fundamentals  
+- [x] Practiced with tools and commands  
+- [x] Gained confidence in subnetting and the OSI model
+
+---
 
