@@ -306,8 +306,7 @@ This final part of the Windows Fundamentals series covers the Windows Registry, 
   - `HKEY_USERS (HKU)`
   - `HKEY_CURRENT_CONFIG (HKCC)`
 
-#### 🔧 Common Tool
-```powershell
+
 regedit
 
 # 🖥️ TryHackMe: Active Directory Basics
