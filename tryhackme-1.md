@@ -562,5 +562,106 @@ Stop-Process -Id 1234
 - [GTFOBins Equivalent: LOLBAS](https://lolbas-project.github.io/)
 
 
+# TryHackMe: Linux PowerShell
+
+## Room Link:
+[TryHackMe - Linux PowerShell](https://tryhackme.com/room/linuxpowershell) <!-- Replace with actual link if different -->
+
+---
+
+## 🧠 Learning Objectives
+- Understand the purpose and usage of **PowerShell on Linux**
+- Learn how to **install PowerShell** on various distros
+- Practice **basic PowerShell commands**
+- Explore **scripting and automation** with PowerShell in a Linux environment
+
+---
+
+## 🛠️ Installation Steps
+
+### ✅ Ubuntu/Debian
+```bash
+sudo apt update
+sudo apt install -y wget apt-transport-https software-properties-common
+wget -q "https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb"
+sudo dpkg -i packages-microsoft-prod.deb
+sudo apt update
+sudo apt install -y powershell
+```
+
+### ✅ Fedora
+```bash
+sudo dnf install powershell
+```
+
+### ✅ Run PowerShell
+```bash
+pwsh
+```
+
+---
+
+## 🔍 Important Commands
+
+| PowerShell | Linux Equivalent | Description |
+|------------|------------------|-------------|
+| `Get-Process` | `ps aux` | View running processes |
+| `Get-Location` | `pwd` | Show current directory |
+| `Set-Location` | `cd` | Change directory |
+| `Get-ChildItem` | `ls` | List directory contents |
+| `Copy-Item` | `cp` | Copy files/directories |
+| `Move-Item` | `mv` | Move files/directories |
+| `Remove-Item` | `rm` | Delete files/directories |
+| `Get-Content` | `cat` | View file content |
+| `Clear-Host` | `clear` | Clear the terminal |
+
+---
+
+## 🧪 Tasks Summary
+
+### Task 1: Introduction
+- ✅ PowerShell is cross-platform
+- ✅ Works on Windows, Linux, and macOS
+
+### Task 2: Installing PowerShell
+- [ ] Install PowerShell on your Linux VM
+- [ ] Launch PowerShell with `pwsh`
+- [ ] Confirm with `Get-Host`
+
+### Task 3: Navigation & Cmdlets
+- [ ] Use `Get-Command`
+- [ ] Practice basic navigation
+
+### Task 4: Scripting Basics
+- [ ] Create a `.ps1` script
+- [ ] Run with `pwsh script.ps1`
+- [ ] Use variables, loops, and conditionals
+
+### Task 5: Piping & Redirection
+- [ ] Try piping (`|`) and redirection (`>`)
+
+### Task 6: Automation
+- [ ] Create a backup script or basic automation
+
+---
+
+## 📝 Notes & Observations
+- You can mix Linux commands using `bash -c 'command'`
+- `$PSVersionTable.PSVersion` shows your PowerShell version
+- You can import modules with `Import-Module`
+
+---
+
+## ✅ Room Completion Status
+- [ ] All questions answered
+- [ ] Root shell obtained (if required)
+- [ ] Flags captured
+
+---
+
+## 🏁 Final Thoughts
+- PowerShell isn't just for Windows!
+- Scripting in PowerShell can streamline tasks across platforms.
+- Helpful for cross-platform sysadmin and automation work.
 
 
