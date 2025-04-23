@@ -1146,3 +1146,80 @@ This lab covers the fundamentals of using **Wireshark**, a powerful network prot
 🔧 Always learning something new at TryHackMe
 
 ---
+
+# TryHackMe: tcpdump - The Basics
+
+![tcpdump Logo](https://upload.wikimedia.org/wikipedia/commons/8/84/Tcpdump_logo.png)
+
+## Overview
+
+This lab introduces the use of **tcpdump**, a command-line packet analyzer. It's a powerful tool for capturing and analyzing network traffic directly from the terminal, often used by sysadmins, security analysts, and penetration testers.
+
+🔗 [Visit the Room on TryHackMe](https://tryhackme.com/room/tcpdumpthebasics)
+
+---
+
+## Objectives
+
+- Understand what tcpdump is and when to use it.
+- Learn how to capture live traffic on a network interface.
+- Use filters to refine capture results.
+- Analyze packet data in real-time or from `.pcap` files.
+- Understand how to capture traffic for specific protocols or hosts.
+
+---
+
+## Key Concepts
+
+- **Command-line Packet Capture:** Lightweight and scriptable network analysis.
+- **Capture Filters vs Display Filters:** tcpdump uses BPF (Berkeley Packet Filter) syntax.
+- **Live Analysis:** Ideal for low-resource environments or quick checks.
+- **Output Redirection:** Save captures to `.pcap` for later use in Wireshark.
+
+---
+
+## Basic Commands Cheat Sheet
+
+| Purpose                          | Command Example                                              |
+|----------------------------------|---------------------------------------------------------------|
+| List interfaces                  | `tcpdump -D`                                                  |
+| Capture on eth0                  | `tcpdump -i eth0`                                             |
+| Capture and save to file         | `tcpdump -i eth0 -w capture.pcap`                             |
+| Read from a pcap file            | `tcpdump -r capture.pcap`                                     |
+| Filter by host                   | `tcpdump host 10.10.10.10`                                    |
+| Filter by port                   | `tcpdump port 80`                                             |
+| Filter by protocol               | `tcpdump icmp` or `tcpdump udp`                              |
+| Limit number of packets          | `tcpdump -c 100`                                              |
+| Verbose output                   | `tcpdump -v` or `-vvv` for even more detail                  |
+| Display only IP traffic          | `tcpdump ip`                                                  |
+
+---
+
+## Notes
+
+- tcpdump requires root privileges to capture traffic.
+- Combine filters with logical operators like `and`, `or`, and `not` (e.g., `tcpdump tcp and port 443`).
+- Use `-n` to disable name resolution for faster results.
+- Use `-A` or `-X` to view ASCII/hex output of packet contents.
+
+---
+
+## Reflections
+
+> This room was a great introduction to command-line packet capture. It's clear why tcpdump is favored for quick diagnostics and scripting. After using Wireshark, it was refreshing to see how tcpdump offers a lightweight alternative that’s just as powerful when used correctly.
+
+---
+
+## Screenshots
+
+> *(Optional: Add terminal screenshots of your tcpdump commands and results here.)*
+
+---
+
+## Author
+
+**Lloyd**  
+🛡️ Security+ Certified  
+💻 Exploring network security one packet at a time
+
+---
