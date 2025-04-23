@@ -1208,18 +1208,36 @@ This lab introduces the use of **tcpdump**, a command-line packet analyzer. It's
 
 > This room was a great introduction to command-line packet capture. It's clear why tcpdump is favored for quick diagnostics and scripting. After using Wireshark, it was refreshing to see how tcpdump offers a lightweight alternative that’s just as powerful when used correctly.
 
----
 
-## Screenshots
+from pathlib import Path
 
-> *(Optional: Add terminal screenshots of your tcpdump commands and results here.)*
+# Define the markdown content
+markdown_content = """# TryHackMe - Nmap: The Basics
 
----
-
-## Author
-
-**Lloyd**  
-🛡️ Security+ Certified  
-💻 Exploring network security one packet at a time
+**Room Link**: [https://tryhackme.com/room/nmap01](https://tryhackme.com/room/nmap01)
 
 ---
+
+## 🧠 Learning Objectives
+
+- Understand what Nmap is and what it's used for.
+- Learn how to perform different types of scans.
+- Identify open ports, services, and potential vulnerabilities using Nmap.
+
+---
+
+## 📚 Key Concepts
+
+### What is Nmap?
+
+- Network Mapper (Nmap) is an open-source tool for network exploration and security auditing.
+- It's used to discover hosts and services on a computer network.
+
+---
+
+## 🔧 Basic Syntax
+
+```bash
+nmap [options] [target]
+
+
