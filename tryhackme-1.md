@@ -1067,3 +1067,82 @@ pwsh
 ## 🧠 Bonus: Secure Ports Cheat Sheet
 
 | Service         | Secure Port
+
+# TryHackMe: Wireshark - The Basics
+
+![Wireshark Logo](https://upload.wikimedia.org/wikipedia/commons/e/e3/Wireshark_Logo.svg)
+
+## Overview
+
+This lab covers the fundamentals of using **Wireshark**, a powerful network protocol analyzer used for network troubleshooting, analysis, and penetration testing. It is part of TryHackMe's "Wireshark: The Basics" room.
+
+🔗 [Visit the Room on TryHackMe](https://tryhackme.com/room/wiresharkthebasics)
+
+---
+
+## Objectives
+
+- Understand what Wireshark is and what it can be used for.
+- Learn how to capture network traffic.
+- Use filters to isolate relevant packets.
+- Analyze various protocols like TCP, HTTP, and DNS.
+- Identify useful information from packet data.
+
+---
+
+## Key Concepts
+
+- **Packet Capturing:** Grabbing network traffic in real time.
+- **Filters:** Using display filters (e.g., `http`, `tcp.port == 80`, `ip.addr == 192.168.1.1`) to zoom in on relevant traffic.
+- **Protocol Analysis:** Breaking down common protocols such as DNS, TCP 3-way handshakes, and HTTP GET requests.
+- **Stream Following:** Reconstructing entire TCP/UDP conversations to understand session data.
+
+---
+
+## Tools Used
+
+- 🐬 **Wireshark**
+- 💻 **Kali Linux** (or THM AttackBox)
+
+---
+
+## Commands & Filters Cheat Sheet
+
+| Purpose                     | Filter Example            |
+|----------------------------|---------------------------|
+| Filter by IP address       | `ip.addr == 10.10.10.10`  |
+| Filter by protocol         | `http`, `dns`, `tcp`      |
+| Follow TCP stream          | Right-click > Follow > TCP Stream |
+| Show only HTTP traffic     | `tcp.port == 80`          |
+| DNS queries only           | `dns.flags.response == 0` |
+| TCP handshake              | `tcp.flags.syn == 1`      |
+
+---
+
+## Notes
+
+- Red color in packets often indicates errors or retransmissions.
+- You can export specific streams or packets via `File > Export Packet Dissections`.
+- Use the "Statistics" tab for high-level traffic summaries (e.g., Protocol Hierarchy, Conversations).
+
+---
+
+## Reflections
+
+> This room was a solid introduction to Wireshark. It helped demystify packet-level data and gave me hands-on practice filtering for meaningful information. Understanding how to dissect a TCP handshake or follow a DNS query has already made me more comfortable with traffic analysis.
+
+---
+
+## Screenshots
+
+> *(Optional: Add your screenshots here to demonstrate Wireshark views, filters, or interesting captures.)*
+
+---
+
+## Author
+
+**Lloyd**  
+🛡️ Security+ Certified  
+🔧 Always learning something new at TryHackMe
+
+---
