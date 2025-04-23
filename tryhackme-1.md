@@ -877,3 +877,87 @@ pwsh
 
 ---
 
+# 📡 TryHackMe: Networking Core Protocols
+
+> Room Link: [https://tryhackme.com/room/networkingcoreprotocols](https://tryhackme.com/room/networkingcoreprotocols)  
+> Difficulty: 🟢 Easy  
+> Tags: Networking, Protocols, TCP/IP, ICMP, DNS, ARP, DHCP
+
+---
+
+## 🧾 Task 1: Introduction
+- This room explores the core protocols that enable network communication.
+- Focus is on the **TCP/IP model**, common protocols, and how they work together.
+
+---
+
+## 🌐 Task 2: TCP/IP Model Overview
+- **4 Layers:**
+  1. Application
+  2. Transport
+  3. Internet
+  4. Network Access
+
+- Each protocol fits into a specific layer.
+- TCP/IP is more practical and widely used than the OSI model.
+
+---
+
+## 🛜 Task 3: Address Resolution Protocol (ARP)
+- **Purpose:** Maps IP addresses to MAC addresses within a LAN.
+- **Command:** `arp -a` (view ARP cache)
+- Works at the **Network Access Layer**.
+
+---
+
+## ⚡ Task 4: Internet Control Message Protocol (ICMP)
+- **Used by:** `ping`, `traceroute`
+- **Purpose:** Error reporting, diagnostics (e.g., unreachable host)
+- Protocol number **1** in the IP header.
+
+---
+
+## 📥 Task 5: Dynamic Host Configuration Protocol (DHCP)
+- **Purpose:** Automatically assigns IP addresses to hosts.
+- **Ports:**
+  - UDP 67 (server)
+  - UDP 68 (client)
+
+- Process: **DORA**
+  1. Discover  
+  2. Offer  
+  3. Request  
+  4. Acknowledge
+
+---
+
+## 🌍 Task 6: Domain Name System (DNS)
+- **Purpose:** Resolves domain names to IP addresses.
+- **Ports:**
+  - UDP 53 (queries)
+  - TCP 53 (zone transfers)
+
+- Tools: `nslookup`, `dig`, `host`
+
+---
+
+## 📦 Task 7: Transmission Control Protocol (TCP)
+- **Reliable** connection-oriented protocol.
+- **3-Way Handshake:**
+  1. SYN
+  2. SYN-ACK
+  3. ACK
+
+- Used by: HTTP, HTTPS, FTP, SSH, etc.
+
+---
+
+## 🚀 Task 8: User Datagram Protocol (UDP)
+- **Unreliable**, **connectionless**, faster than TCP.
+- No handshake or retransmissions.
+- Used by: DNS, DHCP, VoIP, TFTP
+
+---
+
+## 🔐 Task 9: Ports and Protocol Mapping
+| Protocol |
