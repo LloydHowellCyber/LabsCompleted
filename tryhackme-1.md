@@ -961,3 +961,109 @@ pwsh
 
 ## 🔐 Task 9: Ports and Protocol Mapping
 | Protocol |
+
+
+# 🔐 TryHackMe: Networking Secure Protocols
+
+> **Room Link:** [https://tryhackme.com/room/networkingsecureprotocols](https://tryhackme.com/room/networkingsecureprotocols)  
+> **Difficulty:** Easy 🟢  
+> **Tags:** Networking, Security, Encryption, Protocols
+
+---
+
+## 🧾 Task 1: Introduction
+
+- This room covers secure versions of core networking protocols.
+- You'll learn how common protocols are encrypted and what makes them secure.
+- Ideal for learners prepping for Security+ or working in IT support, networking, or cybersecurity.
+
+---
+
+## 🌐 Task 2: Why Secure Protocols Matter
+
+- Unsecured protocols transmit data in **plain text**.
+- **Secure protocols** encrypt traffic to protect confidentiality and integrity.
+- Key threats: Eavesdropping, Man-in-the-Middle attacks, and credential theft.
+
+---
+
+## 🔒 Task 3: Secure Shell (SSH)
+
+- Replaces: **Telnet (Port 23)**
+- **Port:** 22/TCP  
+- Provides secure remote login and command-line access.
+- Uses public key cryptography.
+- Command Example: `ssh user@host`
+
+---
+
+## 📡 Task 4: Secure File Transfer Protocols
+
+- **SFTP** – SSH File Transfer Protocol (runs over port 22)
+- **FTPS** – FTP Secure (adds TLS to FTP, uses port 990)
+- Replaces: **FTP (Port 21)**
+
+| Protocol | Secure? | Port | Encryption |
+|----------|---------|------|------------|
+| FTP      | ❌      | 21   | None       |
+| FTPS     | ✅      | 990  | TLS        |
+| SFTP     | ✅      | 22   | SSH        |
+
+---
+
+## 📬 Task 5: Secure Email Protocols
+
+| Protocol | Secure Version | Port (Secure) |
+|----------|----------------|----------------|
+| SMTP     | SMTPS          | 465 / 587      |
+| IMAP     | IMAPS          | 993            |
+| POP3     | POP3S          | 995            |
+
+- Secure email uses **SSL/TLS** for encryption.
+- STARTTLS is a command used to upgrade plaintext protocols to use encryption.
+
+---
+
+## 🌐 Task 6: Secure Web Access
+
+- **HTTP** = Port 80 (insecure)  
+- **HTTPS** = Port 443 (secure)  
+- HTTPS uses **TLS** to encrypt web traffic.
+- Certificates are issued by **Certificate Authorities (CAs)** and validated by browsers.
+
+---
+
+## 🪪 Task 7: Secure Authentication Protocols
+
+- **Kerberos** – Uses tickets and symmetric encryption (Port 88)
+- **LDAP** – Lightweight Directory Access Protocol  
+  - Insecure: Port 389  
+  - Secure (LDAPS): Port 636
+- **RADIUS** – Remote Authentication Dial-In User Service  
+  - Ports:
+    - 1812/UDP (authentication)
+    - 1813/UDP (accounting)
+- **TACACS+** – Cisco's alternative to RADIUS (Port 49/TCP)
+
+---
+
+## 🧪 Task 8: Hands-on Analysis
+
+- Use Wireshark or packet captures to see encrypted vs unencrypted traffic.
+- Look for the initial **TLS handshake** in HTTPS.
+- Try connecting to services with and without encryption.
+
+---
+
+## ✅ Room Complete!
+
+- [x] Learned how core protocols are secured
+- [x] Understood encryption methods like TLS and SSH
+- [x] Practiced identifying ports and secure services
+- [x] Gained insight into modern network security practices
+
+---
+
+## 🧠 Bonus: Secure Ports Cheat Sheet
+
+| Service         | Secure Port
