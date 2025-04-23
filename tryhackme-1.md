@@ -1237,7 +1237,58 @@ markdown_content = """# TryHackMe - Nmap: The Basics
 
 ## 🔧 Basic Syntax
 
-```bash
-nmap [options] [target]
 
+
+# TryHackMe: Cryptography Basics
+
+> Walkthrough and notes for the **Cryptography Basics** room on [TryHackMe](https://tryhackme.com/room/cryptographybasics).
+
+---
+
+## Room Overview
+
+**Difficulty:** Beginner  
+**Category:** Cyber Defense / CTF  
+**Tags:** Cryptography, Cipher, Encoding, Decoding
+
+---
+
+## Objectives
+
+- Understand the fundamentals of cryptography.
+- Learn about different cipher types: Caesar, Vigenère, XOR, etc.
+- Practice decrypting and encrypting messages.
+- Recognize encoding formats like Base64, Hex, and ASCII.
+- Solve hands-on challenges using common crypto techniques.
+
+---
+
+## Topics Covered
+
+### 🔐 Symmetric Encryption
+
+- Caesar Cipher
+- Vigenère Cipher
+- XOR Cipher
+
+### 🔤 Encoding
+
+- ASCII
+- Base64
+- Hexadecimal
+- Binary
+
+### 🔍 Tools Introduced
+
+- CyberChef (https://gchq.github.io/CyberChef)
+- Dcode.fr
+- Python scripts
+
+---
+
+## Commands & Examples
+
+### Caesar Cipher (Python One-Liner)
+```python
+''.join([chr(((ord(c) - 65 - key) % 26) + 65) for c in ciphertext])
 
