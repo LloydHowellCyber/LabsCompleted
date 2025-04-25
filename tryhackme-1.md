@@ -1288,101 +1288,59 @@ markdown_content = """# TryHackMe - Nmap: The Basics
 
 ## Commands & Examples
 
-### Caesar Cipher (Python One-Liner)
-```python
 
+# TryHackMe - Public Key Cryptography (Basics)
 
-# TryHackMe - Public Key Cryptography (Basic)
-
-**Room:** [Public Key Cryptography](https://tryhackme.com/room/publickeycryptography)  
-**Category:** Cryptography  
+**Room Link:** [Public Key Cryptography](https://tryhackme.com/room/publickeycryptography)  
 **Difficulty:** Easy  
-**Tags:** RSA, Modular Arithmetic, Encryption, Decryption, Public/Private Keys
+**Tags:** RSA, Asymmetric Encryption, Modular Arithmetic, Cryptography
 
 ---
 
 ## 🧠 Learning Objectives
 
-- Understand how **public-key cryptography** works, especially the RSA algorithm.
-- Perform **modular arithmetic** operations.
-- Learn how to **encrypt** and **decrypt** messages using a pair of public/private keys.
-- Understand the role of **Euler’s totient function**, `ϕ(n)`, and **modular inverses**.
+- Understand the principles of **public-key cryptography**
+- Learn how RSA encryption and decryption work
+- Practice key generation with prime numbers and Euler's totient
+- Use modular arithmetic and the Extended Euclidean Algorithm
 
 ---
 
-## 🧮 Key Concepts
+## 🔐 What is Public-Key Cryptography?
 
-### What is Public Key Cryptography?
+Public-key cryptography (asymmetric encryption) uses **two keys**:
 
-- Uses **two keys**: a **public key** to encrypt data and a **private key** to decrypt it.
-- Commonly used for secure communications and digital signatures.
+- **Public Key**: Used to encrypt data.
+- **Private Key**: Used to decrypt data.
 
-### Modular Arithmetic
-
-- `a mod n` is the **remainder** when `a` is divided by `n`.
-- Example: `10 mod 3 = 1`
-
-### RSA Key Generation
-
-Given:
-- Two large primes: `p` and `q`
-- `n = p * q`
-- `ϕ(n) = (p - 1)(q - 1)`
-- Choose `e` such that `1 < e < ϕ(n)` and `gcd(e, ϕ(n)) = 1`
-- Compute `d`, the **modular inverse** of `e mod ϕ(n)`
-
-The key pair is:
-- Public Key: `(n, e)`
-- Private Key: `(n, d)`
+Anyone can use the public key to encrypt a message, but only the holder of the private key can decrypt it.
 
 ---
 
-## 🔐 RSA in Action
+## 📘 RSA Overview
 
-### Encryption
+RSA is the most well-known public-key cryptosystem. Here's how it works:
 
-To encrypt a message `m`:
+### Key Generation
 
+1. Choose two **large prime numbers**, `p` and `q`
+2. Compute `n = p × q`
+3. Compute Euler’s totient function: `ϕ(n) = (p - 1)(q - 1)`
+4. Choose an integer `e` such that:
+   - `1 < e < ϕ(n)`
+   - `e` and `ϕ(n)` are **coprime** (gcd = 1)
+5. Compute the **modular inverse** of `e` modulo `ϕ(n)` to find `d`:
+   - `d ≡ e⁻¹ mod ϕ(n)`
+   - Meaning: `(e × d) % ϕ(n) = 1`
 
-
----
-
-## 🧪 Lab Walkthrough
-
-### Task 1: Introduction
-✅ Read the intro to understand the scope.
-
-### Task 2: Modular Arithmetic
-✅ Learn how mod works, solve simple arithmetic questions.
-
-### Task 3: Euler’s Totient
-- `ϕ(n) = (p - 1)(q - 1)`
-- Example:  
-  - If `p = 17`, `q = 11`, then  
-    `n = 187`, `ϕ(n) = 160`
-
-### Task 4: Choose `e`
-- Must be **coprime** with `ϕ(n)`
-- Usually small odd number like `3`, `17`, or `65537`
-
-### Task 5: Modular Inverse
-Use the **Extended Euclidean Algorithm** to find `d` such that:
-
-
-
-### Task 6: Encrypt & Decrypt
-- Encrypt with public key: `(n, e)`
-- Decrypt with private key: `(n, d)`
-- Practice with real examples in the lab!
+**Public Key**: `(n, e)`  
+**Private Key**: `(n, d)`
 
 ---
 
-## 📌 Useful Tools
+## 🧮 Encryption and Decryption
 
-- `CyberChef` – modular arithmetic, hex/binary conversion
-- `Python` – fast for scripting RSA steps:
-```python
-pow(message, e, n)  # encryption
-pow(ciphertext, d, n)  # decryption
+### Encrypt
 
+To encrypt a message `m` (as an integer):
 
