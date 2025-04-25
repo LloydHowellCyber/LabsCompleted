@@ -1345,5 +1345,44 @@ To encrypt a message `m`:
 
 
 
+---
+
+## 🧪 Lab Walkthrough
+
+### Task 1: Introduction
+✅ Read the intro to understand the scope.
+
+### Task 2: Modular Arithmetic
+✅ Learn how mod works, solve simple arithmetic questions.
+
+### Task 3: Euler’s Totient
+- `ϕ(n) = (p - 1)(q - 1)`
+- Example:  
+  - If `p = 17`, `q = 11`, then  
+    `n = 187`, `ϕ(n) = 160`
+
+### Task 4: Choose `e`
+- Must be **coprime** with `ϕ(n)`
+- Usually small odd number like `3`, `17`, or `65537`
+
+### Task 5: Modular Inverse
+Use the **Extended Euclidean Algorithm** to find `d` such that:
+
+
+
+### Task 6: Encrypt & Decrypt
+- Encrypt with public key: `(n, e)`
+- Decrypt with private key: `(n, d)`
+- Practice with real examples in the lab!
+
+---
+
+## 📌 Useful Tools
+
+- `CyberChef` – modular arithmetic, hex/binary conversion
+- `Python` – fast for scripting RSA steps:
+```python
+pow(message, e, n)  # encryption
+pow(ciphertext, d, n)  # decryption
 
 
