@@ -1290,5 +1290,60 @@ markdown_content = """# TryHackMe - Nmap: The Basics
 
 ### Caesar Cipher (Python One-Liner)
 ```python
-''.join([chr(((ord(c) - 65 - key) % 26) + 65) for c in ciphertext])
+
+
+# TryHackMe - Public Key Cryptography (Basic)
+
+**Room:** [Public Key Cryptography](https://tryhackme.com/room/publickeycryptography)  
+**Category:** Cryptography  
+**Difficulty:** Easy  
+**Tags:** RSA, Modular Arithmetic, Encryption, Decryption, Public/Private Keys
+
+---
+
+## 🧠 Learning Objectives
+
+- Understand how **public-key cryptography** works, especially the RSA algorithm.
+- Perform **modular arithmetic** operations.
+- Learn how to **encrypt** and **decrypt** messages using a pair of public/private keys.
+- Understand the role of **Euler’s totient function**, `ϕ(n)`, and **modular inverses**.
+
+---
+
+## 🧮 Key Concepts
+
+### What is Public Key Cryptography?
+
+- Uses **two keys**: a **public key** to encrypt data and a **private key** to decrypt it.
+- Commonly used for secure communications and digital signatures.
+
+### Modular Arithmetic
+
+- `a mod n` is the **remainder** when `a` is divided by `n`.
+- Example: `10 mod 3 = 1`
+
+### RSA Key Generation
+
+Given:
+- Two large primes: `p` and `q`
+- `n = p * q`
+- `ϕ(n) = (p - 1)(q - 1)`
+- Choose `e` such that `1 < e < ϕ(n)` and `gcd(e, ϕ(n)) = 1`
+- Compute `d`, the **modular inverse** of `e mod ϕ(n)`
+
+The key pair is:
+- Public Key: `(n, e)`
+- Private Key: `(n, d)`
+
+---
+
+## 🔐 RSA in Action
+
+### Encryption
+
+To encrypt a message `m`:
+
+
+
+
 
