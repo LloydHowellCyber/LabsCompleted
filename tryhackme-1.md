@@ -1224,6 +1224,47 @@ markdown_content = """# TryHackMe - Nmap: The Basics
 - Learn how to perform different types of scans.
 - Identify open ports, services, and potential vulnerabilities using Nmap.
 
+# TryHackMe - Hashing Basics
+
+**Room Link:** [Hashing Basics](https://tryhackme.com/room/hashingbasics)  
+**Difficulty:** Easy  
+**Tags:** Hashing, Cryptography, Integrity, Digital Signatures
+
+---
+
+## 🧠 Learning Objectives
+
+- Understand what hashing is and how it's different from encryption.
+- Explore common hashing algorithms like MD5, SHA1, and SHA256.
+- Learn the real-world use cases of hashes, including passwords and file integrity.
+- Practice generating and cracking hashes.
+
+---
+
+## 🔐 What is Hashing?
+
+Hashing is the process of transforming any input (data, file, password) into a fixed-length string of characters — a hash.
+
+> Unlike encryption, **hashing is one-way** — you can’t reverse a hash to get the original data.
+
+### Properties of a Good Hash Function:
+- **Deterministic**: Same input always gives the same hash.
+- **Irreversible**: You can't go backward to the original input.
+- **Unique**: Different inputs should produce different hashes (collision-resistant).
+- **Fast**: Quick to compute.
+
+---
+
+## 🔍 Common Hash Algorithms
+
+| Algorithm | Hash Length | Notes |
+|----------|-------------|-------|
+| MD5      | 128-bit     | Fast but **not secure** (vulnerable to collisions) |
+| SHA1     | 160-bit     | Better than MD5, but still **not secure** |
+| SHA256   | 256-bit     | Widely used and secure for most applications |
+
+Example hash using SHA256:
+
 ---
 
 ## 📚 Key Concepts
@@ -1341,6 +1382,40 @@ RSA is the most well-known public-key cryptosystem. Here's how it works:
 ## 🧮 Encryption and Decryption
 
 ### Encrypt
+
+
+---
+
+## 🧪 Real-World Use Cases
+
+### ✅ File Integrity
+
+When downloading software:
+- A hash is often provided by the developer.
+- You can hash the downloaded file and compare it to ensure it hasn’t been tampered with.
+
+### 🔒 Password Storage
+
+Instead of storing plaintext passwords:
+- Store the hash of the password.
+- When logging in, hash the entered password and compare it to the stored hash.
+
+### ✍️ Digital Signatures
+
+Used in combination with public-key cryptography to verify the authenticity of documents.
+
+---
+
+## 🧰 Cracking Hashes
+
+Since hashes are one-way, to "crack" them we:
+- Use **wordlists** (dictionary attacks).
+- Use **brute force** or **rainbow tables**.
+
+Example with `hashcat`:
+```bash
+
+
 
 To encrypt a message `m` (as an integer):
 
