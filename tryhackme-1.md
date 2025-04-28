@@ -1412,10 +1412,24 @@ Since hashes are one-way, to "crack" them we:
 - Use **wordlists** (dictionary attacks).
 - Use **brute force** or **rainbow tables**.
 
-Example with `hashcat`:
+
+
+# TryHackMe - John the Ripper Lab
+
+## Overview
+This lab focused on practicing password cracking techniques using **John the Ripper**.  
+The exercises included cracking different types of files and hashes, reinforcing the core workflow.
+
+## Key Concepts
+- Identifying hash types
+- Using wordlists and rules
+- Cracking password-protected files (ZIP, RAR)
+- Cracking SSH private keys
+- Recognizing patterns in password cracking
+
+## Commands Used
+
+### Basic Hash Cracking
 ```bash
 
-
-
-To encrypt a message `m` (as an integer):
 
