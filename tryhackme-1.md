@@ -1556,4 +1556,38 @@ In this lab, we explore Meterpreter, the advanced and powerful payload within Me
 
 **Exploit used**:
 
+# TryHackMe - Metasploitable Lab
+
+## 🧪 Room Overview
+
+This lab introduces learners to the **Metasploitable** virtual machine—a vulnerable Linux box designed for practicing offensive security using **Metasploit Framework**.
+
+---
+
+## 🧠 Objectives
+
+- Scan for open ports and services
+- Identify vulnerable services
+- Use Metasploit modules to exploit vulnerabilities
+- Gain Meterpreter shell access
+- Post-exploitation with Meterpreter
+
+---
+
+## ⚙️ Lab Environment
+
+- **Room**: [Metasploitable](https://tryhackme.com/room/metasploitintro)
+- **Target**: Metasploitable 2 (Linux)
+- **Attack Box**: Kali Linux / THM Attack Box
+- **Tools**: Nmap, Metasploit Framework, Meterpreter
+
+---
+
+## 🚩 Tasks and Answers
+
+### 🔍 Reconnaissance
+
+**Nmap Scan**:
+```bash
+nmap -sV -p- -T4 [TARGET_IP]
 
