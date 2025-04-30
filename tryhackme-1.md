@@ -1495,6 +1495,29 @@ Metasploit, maintained by Rapid7, is a collection of tested exploits, auxiliary 
 
 Before diving into Metasploit, ensure the database is initialized and the console is ready:
 
+# TryHackMe: Metasploit - Exploitation Lab
+
+> Room Link: [https://tryhackme.com/room/metasploit](https://tryhackme.com/room/metasploit)
+
+## Overview
+
+This room introduces Metasploit for penetration testing and exploitation. We'll explore various Metasploit modules and use them to exploit known vulnerabilities in a target machine.
+
+---
+
+## Task 1: Introduction
+
+- [ ] Read the intro material
+- [ ] Mark task as complete
+
+---
+
+## Task 2: Starting Metasploit
+
+### Notes:
+- Use `msfconsole` to launch the framework
+- Familiarize with basic commands like `search`, `use`, `info`, `set`, and `exploit`
+
 ```bash
-msfdb init
-msfconsole -q
+msfconsole
+
