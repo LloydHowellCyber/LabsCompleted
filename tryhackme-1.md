@@ -1612,7 +1612,45 @@ This lab introduces learners to the **Metasploitable** virtual machine—a vulne
 
 ### ⚙️ Nmap Scan
 
-```bash
-nmap -sC -sV -Pn -p- -T4 <target_ip>
+# TryHackMe: Web Application Basics - Walkthrough & Notes
+
+> **Room URL:** [https://tryhackme.com/room/webappbasics](https://tryhackme.com/room/webappbasics)  
+> **Difficulty:** Easy  
+> **Category:** Web Exploitation  
+> **Your role:** Web Security Student
+
+---
+
+## 🧠 Learning Objectives
+
+- Understand how web applications work.
+- Identify how the web uses HTTP methods (GET, POST).
+- Use tools like Burp Suite and developer tools to explore requests.
+- Learn about cookies and authentication.
+- Get comfortable interacting with websites manually for testing.
+
+---
+
+## 🌐 Task 1: Introduction to Web Applications
+
+> **Concept:** A web application is software that runs on a web server and is accessed via a browser.
+
+- Built with **front-end** (HTML, CSS, JS) and **back-end** (e.g., PHP, Python, Node.js).
+- Communicates over **HTTP/HTTPS**.
+- User input is often passed via **forms**, **URLs**, or **cookies**.
+
+---
+
+## 🧾 Task 2: HTTP Requests
+
+> **HTTP Methods:**
+- `GET`: Retrieve data.
+- `POST`: Submit data (e.g., forms).
+- `PUT`, `DELETE`, `OPTIONS`, etc.
+
+### View in Browser Dev Tools (F12 → Network Tab)
+
+Example `GET` request:
+
 
 
