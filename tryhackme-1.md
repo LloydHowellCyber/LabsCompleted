@@ -1518,6 +1518,42 @@ This room introduces Metasploit for penetration testing and exploitation. We'll 
 - Use `msfconsole` to launch the framework
 - Familiarize with basic commands like `search`, `use`, `info`, `set`, and `exploit`
 
-```bash
-msfconsole
+# TryHackMe - Metasploit: Meterpreter Lab
+
+## Lab Overview
+
+In this lab, we explore Meterpreter, the advanced and powerful payload within Metasploit. We cover:
+
+- Gaining a Meterpreter shell
+- Interacting with sessions
+- File system navigation
+- Privilege escalation
+- Pivoting and persistence
+
+---
+
+## 🧠 Learning Objectives
+
+- Understand how to launch and interact with a Meterpreter session.
+- Learn key Meterpreter commands.
+- Extract files, dump credentials, and escalate privileges.
+- Practice maintaining persistence on a compromised machine.
+
+---
+
+## ⚙️ Lab Setup
+
+- **Room**: [Metasploit](https://tryhackme.com/room/rpmetasploit)
+- **VPN**: Connected via TryHackMe OpenVPN
+- **Target OS**: Windows
+- **Tools Used**: Metasploit Framework, Meterpreter payloads
+
+---
+
+## 🚩 Tasks and Answers
+
+### Task: Starting a Meterpreter Session
+
+**Exploit used**:
+
 
