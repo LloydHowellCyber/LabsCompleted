@@ -1588,6 +1588,31 @@ This lab introduces learners to the **Metasploitable** virtual machine—a vulne
 ### 🔍 Reconnaissance
 
 **Nmap Scan**:
+# TryHackMe: Blue - Walkthrough & Notes
+
+> **Room URL:** [https://tryhackme.com/room/blue](https://tryhackme.com/room/blue)  
+> **Difficulty:** Easy  
+> **Focus:** EternalBlue (MS17-010) vulnerability exploitation  
+> **Target OS:** Windows 7  
+> **Your role:** Penetration Tester
+
+---
+
+## 🧠 Learning Objectives
+
+- Understand and identify the MS17-010 vulnerability.
+- Use Nmap for vulnerability scanning.
+- Exploit EternalBlue using Metasploit.
+- Get a Meterpreter shell and escalate privileges.
+- Extract flags from user and system locations.
+
+---
+
+## 🔍 Step 1: Reconnaissance
+
+### ⚙️ Nmap Scan
+
 ```bash
-nmap -sV -p- -T4 [TARGET_IP]
+nmap -sC -sV -Pn -p- -T4 <target_ip>
+
 
