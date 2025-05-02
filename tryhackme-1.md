@@ -1687,6 +1687,40 @@ Welcome to my notes and progress for the [JavaScript Essentials](https://tryhack
 - JavaScript is a scripting language primarily used for web development.
 - It runs in the browser and enables dynamic content.
 
+# TryHackMe: SQL Fundamentals 📊🛡️
+
+Welcome to my notes and progress for the [SQL Fundamentals](https://tryhackme.com/) room on TryHackMe. This room covers Structured Query Language (SQL) basics, including how it's used, common commands, and how attackers can exploit insecure SQL queries.
+
+---
+
+## 🚀 Room Overview
+
+**Room Name**: SQL Fundamentals  
+**Platform**: TryHackMe  
+**Difficulty**: Beginner  
+**Room Link**: _[Insert your referral link if applicable]_  
+**Status**: In Progress ✅ / Completed 🏁
+
+---
+
+## 🗂️ Topics Covered
+
+1. [What is SQL?](#1-what-is-sql)
+2. [Basic Commands](#2-basic-commands)
+3. [Filtering and Sorting](#3-filtering-and-sorting)
+4. [Using Operators](#4-using-operators)
+5. [SQL Injection Intro](#5-sql-injection-intro)
+6. [Parameterized Queries](#6-parameterized-queries)
+
+---
+
+## 1. What is SQL?
+
+- SQL stands for Structured Query Language.
+- Used to interact with relational databases.
+- Common databases: MySQL, PostgreSQL, SQLite, MSSQL.
+
+
 
 
 
