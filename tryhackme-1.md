@@ -1652,5 +1652,41 @@ This lab introduces learners to the **Metasploitable** virtual machine—a vulne
 
 Example `GET` request:
 
+# TryHackMe: JavaScript Essentials 🧠💻
+
+Welcome to my notes and progress for the [JavaScript Essentials](https://tryhackme.com/) module on TryHackMe. This room covers the fundamentals of JavaScript—perfect for those looking to improve their web development or web hacking skills.
+
+---
+
+## 🚀 Room Overview
+
+**Room Name**: JavaScript Essentials  
+**Platform**: TryHackMe  
+**Difficulty**: Beginner  
+**Room Link**: _[Insert your referral link if you want to track clicks]_  
+**Status**: In Progress ✅ / Completed 🏁
+
+---
+
+## 🗂️ Topics Covered
+
+1. [Intro to JavaScript](#1-intro-to-javascript)
+2. [Variables and Data Types](#2-variables-and-data-types)
+3. [Operators and Expressions](#3-operators-and-expressions)
+4. [Control Structures](#4-control-structures)
+5. [Functions](#5-functions)
+6. [Objects and Arrays](#6-objects-and-arrays)
+7. [DOM Manipulation](#7-dom-manipulation)
+8. [Event Handling](#8-event-handling)
+9. [Basic Debugging and Console Tools](#9-basic-debugging-and-console-tools)
+
+---
+
+## 1. Intro to JavaScript
+
+- JavaScript is a scripting language primarily used for web development.
+- It runs in the browser and enables dynamic content.
+
+
 
 
