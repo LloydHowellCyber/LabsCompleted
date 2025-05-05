@@ -1721,6 +1721,36 @@ Welcome to my notes and progress for the [SQL Fundamentals](https://tryhackme.co
 - Common databases: MySQL, PostgreSQL, SQLite, MSSQL.
 
 
+# TryHackMe - Burp Suite: The Basics Lab
+
+> Walkthrough and notes by [Lloyd Howell]
+
+## Room Link
+[Burp Suite: The Basics](https://tryhackme.com/room/burpsuitebasics)
+
+---
+
+## Task 1: Introduction
+
+### Notes:
+- Overview of Burp Suite as a web vulnerability scanner and proxy.
+- Used to intercept and manipulate HTTP requests.
+
+### Questions:
+- No questions in this task.
+
+---
+
+## Task 2: Intercepting Traffic
+
+### Notes:
+- Burp acts as a proxy between browser and web server.
+- Configure browser to use Burp's proxy (usually `127.0.0.1:8080`).
+- Intercept tab allows viewing and modifying requests.
+
+### Questions:
+1. **What is the default proxy listener address and port used by Burp Suite?**
+
 
 
 
